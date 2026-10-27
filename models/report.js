@@ -9,6 +9,16 @@ const reports = {
         callback
     );
 },
+Financial_Report: function (data, callback) {
+    db.query(
+        "CALL Financial_Report(?, ?)",
+        [
+            data.From_Date,
+            data.To_Date
+        ],
+        callback
+    );
+},
 
 
 };

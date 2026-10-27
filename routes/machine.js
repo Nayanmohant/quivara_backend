@@ -128,7 +128,8 @@ router.get('/Get_Machine_Allocation', function (req, res) {
 
         return res.status(200).json({
             success: true,
-            data: result[0]
+            data: result[0],
+            Unallocated_Entries: result[1]
         });
 
     });
